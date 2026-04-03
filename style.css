@@ -11,6 +11,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* NAVBAR */
 .navbar{
     display: flex;
@@ -45,9 +46,10 @@ nav ul li{
 /* HERO SECTION */
 .top-section{
     background-position: top;
-    height: 80vh;
-    background: linear-gradient(to left, rgba(14, 8, 8, 0.922, rgba(79, 59, 59, 0.553)));
+    height: 90vh;
+    /* background: linear-gradient(to left, rgba(14, 8, 8, 0.922, rgba(79, 59, 59, 0.553))); */
     background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/92fdd474219763.60db29a155659.jpg');
+    /* font-size: 2rem; */
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,11 +121,25 @@ button:hover{
 
 /* MOVIE ROW */
 .movie-section{
-    padding: 10px 25px;
     
+    padding: 10px 25px;
+
+    
+}
+@media (max-width: 768px) {
+    .movie-row {
+grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .movie-row {
+grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .movie-row{
+    display: grid;
+    grid-template-columns: repeat(5,);
     display: flex;
     gap: 15px;
     overflow-x: auto;
