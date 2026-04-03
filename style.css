@@ -18,7 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    /* background: black; */
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -37,39 +37,45 @@ nav ul li{
     cursor: pointer;
 }
 
-.my-n{
-    background: #333;
+.my-netflix{
+ 
     padding: 6px 12px;
     border-radius: 20px;
 }
 
+
 /* HERO SECTION */
 .top-section{
-    background-position: top;
-    height: 90vh;
-    /* background: linear-gradient(to left, rgba(14, 8, 8, 0.922, rgba(79, 59, 59, 0.553))); */
+    background: linear-gradient(0, 0, 0, 0.8), rgba(0,0,0,0.8);
     background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/92fdd474219763.60db29a155659.jpg');
-    /* font-size: 2rem; */
     overflow: hidden;
     background-size: cover;
+     background-position: center;
+     flex-direction: column;
+     justify-content: center;
     background-repeat: no-repeat;
-    object-fit: contain; 
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
+    min-height: 100vh; 
     
 }
+
+.content{
+    max-width: 600px;
+}
+
+
+
 @media (max-width: 768px) {
-    .top-section {
-grid-template-columns: repeat(3, 1fr);
+    .navbar {
+    flex-direction: column;
+    align-items: center;
     }
-}
 
-@media (max-width: 480px) {
-    .top-section {
-grid-template-columns: repeat(3, 1fr);
-    }
+nav ul{
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+ }
 }
-
 .content{
     margin-left: 12px;
     display: flex;
@@ -103,21 +109,13 @@ button:hover{
     margin-bottom: 5px;
  }
 
-/* .top-section p{
-    margin-top: 100px;
-} */
+
 
 .top-section .content{
     padding-left: 15px;
     margin-top: 390px;
 }
 
-/* .top-section .content{
-    height: 60vh;
-    padding-left: 200px;
-    
-    background-repeat: no-repeat;
-} */
 
 .content h1{
     font-size: 40px;
@@ -134,14 +132,15 @@ button:hover{
 
 /* MOVIE ROW */
 .movie-section{
-    
+    scroll-snap-type: start;
     padding: 10px 25px;
 
     
 }
 @media (max-width: 768px) {
     .movie-row {
-grid-template-columns: repeat(3, 1fr);
+width: 150px;
+max-height: 100px;
     }
 }
 @media (max-width: 480px) {
@@ -151,6 +150,7 @@ grid-template-columns: repeat(3, 1fr);
 }
 
 .movie-row{
+    font-size: 14px;
     display: grid;
     grid-template-columns: repeat(5,);
     display: flex;
@@ -158,6 +158,8 @@ grid-template-columns: repeat(3, 1fr);
     overflow-x: auto;
     /* padding: 5px; */
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+
   
 }
 
