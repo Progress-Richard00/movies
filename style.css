@@ -137,7 +137,7 @@ button:hover{
 
     
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .movie-row {
 width: 150px;
 max-height: 100px;
@@ -145,30 +145,29 @@ max-height: 100px;
 }
 @media (max-width: 480px) {
     .movie-row {
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(auto-fit);
     }
-}
+} */
 
 .movie-row{
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: repeat(5,);
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    /* padding: 5px; */
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-
-  
+    scroll-behavior: smooth;
 }
+
 
 .movie-row img{
     width: 150px;
     border-radius: 5px;
+    flex-shrink: 0px;
     cursor: pointer;
     transition: transform 0.3s;
    
+}
+
+.movie-row::-webkit-scrollbar{
+    display: none;
 }
 
 .movie-row img:hover{
