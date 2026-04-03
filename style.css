@@ -55,8 +55,21 @@ nav ul li{
     background-repeat: no-repeat;
     object-fit: contain; 
     align-items: center;
+    grid-template-columns: repeat(5, 1fr);
     
 }
+@media (max-width: 768px) {
+    .top-section {
+grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .content{
     margin-left: 12px;
     display: flex;
