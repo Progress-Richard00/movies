@@ -15,13 +15,14 @@ body{
 /* NAVBAR */
 .navbar{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 15px 40px;
     flex-wrap: wrap;
 }
 
 .logo{
+    padding: 10px 15px;
     color: red;
     font-size: 24px;
     font-weight: bold;
@@ -133,7 +134,7 @@ button:hover{
 /* MOVIE ROW */
 .movie-section{
     scroll-snap-type: start;
-    padding: 10px 25px;
+    padding: 10px 15px;
 
     
 }
