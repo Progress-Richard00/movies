@@ -18,7 +18,7 @@ body {
     align-items: center;
     padding: 10px 10px;
     padding-bottom: 670px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .logo {
@@ -109,7 +109,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* MOVIE ROW (Netflix Style) */
+/* MOVIE ROW (Netflix) */
 .movie-row {
     display: flex;
     gap: 12px;
@@ -144,13 +144,13 @@ button:hover {
     }
 
     nav ul {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
     }
 
-    .content h1 {
-        font-size: 28px;
-    }
+    /* .content h1 {
+        font-size: 28px; */
+    /* } */
 
     .movie-row img {
         width: 130px;
