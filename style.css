@@ -143,7 +143,7 @@ button:hover {
 /* RESPONSIVENESS */
 
 /* Tablet */
-@media (max-width: 490px) {
+@media (max-width: 470px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -164,9 +164,9 @@ button:hover {
 }
 
 /* Mobile */
-@media (max-width: 360px) {
-    .content h1 {
-        font-size: 22px;
+@media (max-width: 300px) {
+    .content {
+        font-size: 20px;
     }
 
     .movie-row img {
