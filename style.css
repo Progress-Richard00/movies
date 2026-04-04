@@ -175,11 +175,11 @@ button:hover {
 
     .buttons {
         flex-direction: column;
-        width: 50%;
+        width: 100%;
     }
 
     .play, .info {
-        width: 50%;
+        width: 100%;
         text-align: center;
     }
 }
