@@ -17,13 +17,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    padding-bottom: 670px;
     flex-wrap: wrap;
-    margin-bottom: 600px;
-
 }
 
 .logo {
-    /* padding: 5px 5px; */
+    padding: 5px;
     color: red;
     font-size: 26px;
     font-weight: bold;
@@ -31,8 +30,7 @@ body {
 
 nav ul {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
 }
 
@@ -50,22 +48,23 @@ nav ul li {
     min-height: 100vh;
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .top-section .content {
     padding: 40px 20px;
-    max-width: none;
-    width: 100%;
-
+    max-width: 500px;
 }
 
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-
-/* .subtitle {
+.subtitle {
     color: #ccc;
     margin-bottom: 10px;
-} */
+}
 
 .small-text {
     font-size: 14px;
@@ -76,13 +75,8 @@ nav ul li {
 /* BUTTONS */
 .buttons {
     display: flex;
-    justify-content: flex-end;
     gap: 10px;
-   
-
 }
-
-
 
 .play {
     background: #fff;
