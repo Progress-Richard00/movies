@@ -164,7 +164,7 @@ button:hover {
 }
 
 /* Mobile */
-@media (max-width: 420px) {
+@media (max-width: 400px) {
     .content {
         font-size: 20px;
     }
@@ -175,11 +175,11 @@ button:hover {
 
     .buttons {
         flex-direction: column;
-        width: 10%;
+        width: 30%;
     }
 
     .play, .info {
-        width: 10%;
+        width: 30%;
         text-align: center;
     }
 }
