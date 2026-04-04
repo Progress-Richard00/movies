@@ -18,7 +18,7 @@ body {
     align-items: center;
     padding: 10px;
     padding-bottom: 670px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .logo {
@@ -150,7 +150,7 @@ button:hover {
     }
 
     nav ul {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
     }
 
@@ -164,7 +164,7 @@ button:hover {
 }
 
 /* Mobile */
-@media (max-width: 300px) {
+@media (max-width: 390px) {
     .content {
         font-size: 20px;
     }
