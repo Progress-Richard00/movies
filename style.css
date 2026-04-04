@@ -137,7 +137,7 @@ button:hover {
 /* RESPONSIVENESS */
 
 /* Tablet */
-@media (max-width: 400px) {
+@media (max-width: 260px) {
     .navbar {
         flex-direction: column;
         align-items: center;
