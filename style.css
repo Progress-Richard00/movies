@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 10px;
     padding-bottom: 670px;
     flex-wrap: wrap;
 }
@@ -52,11 +52,11 @@ nav ul li {
 }
 
 .top-section .content {
-    padding: 40px 20px;
+    padding: 40px 40px;
     max-width: 500px;
 }
 
-.content h1 {
+/* .content h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -70,12 +70,12 @@ nav ul li {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 15px;
-}
+} */
 
 /* BUTTONS */
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .play {
