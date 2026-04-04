@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    padding: 5px;
+    padding: 7px;
     color: red;
     font-size: 26px;
     font-weight: bold;
@@ -36,6 +36,12 @@ nav ul {
 
 nav ul li {
     cursor: pointer;
+}
+
+nav a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
 }
 
 /* HERO SECTION */
@@ -169,11 +175,11 @@ button:hover {
 
     .buttons {
         flex-direction: column;
-        width: 100%;
+        width: 50%;
     }
 
     .play, .info {
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
 }
